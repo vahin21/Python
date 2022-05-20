@@ -22,7 +22,7 @@ If you encounter any issues or bugs, you can visit the 'Issues' tab in my reposi
 
 ## Any Doubts or Questions
 
-If you have any doubts or questions, you are always free to ask me. I will be available on Twitter (twitter.com/anikethchavare) and Discord (AnikethC#6392).
+If you have any doubts or questions, you are always free to ask me. I will be available on [Twitter](https://twitter.com/anikethchavare) and Discord (Aniketh#6387).
 
 ## Conclusion
 

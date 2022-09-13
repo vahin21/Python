@@ -6,19 +6,23 @@ Hello Everyone! Welcome to my GitHub repo 'Python'.
 
 In this repo, I will be storing all of the basic Python programs.
 
-### 1) ATM
+### 1) School Programs - 11th Grade
+
+In this folder, I have stored all the programs I did in 11th Grade computer science.
+
+### 2) ATM
 
 This program is basically an ATM. You can deposit, withdraw, or check your current balance. When you download and run the program, you have to enter a PIN. The PIN is **8241** (shush...don't tell anyone).
 
 After entering the PIN, you get options to withdraw money, deposit money, and check your balance.
 
-### 2) Anagram
+### 3) Anagram
 
 This program checks if two strings are anagrams or not.
 
 Two strings are an anagram if they both have the same number of letters and the same letters.
 
-### 3) Calculator
+### 4) Calculator
 
 This program is a calculator. When you run the program, you get 7 options (add, subtract, multiply, divide, modulus, exponenciation, and floor division). You can choose which operation you want to do and enter the 2 numbers.
 

@@ -1,4 +1,6 @@
-# Program 9 - Uppercase (Alternate) It capitalizes each alternate letter in a word.
+# Program 9 - Uppercase (Alternate)
+
+# Program to turn each alternate letter of a string uppercase.
 
 # Variables
 word = input("Enter a word: ")

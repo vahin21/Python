@@ -1,4 +1,6 @@
-# Program 10 - Pincode (Finds a Pincode in an Address)
+# Program 10 - Pincode
+
+# Program to find a pincode in an address (string).
 
 # Variables
 address = input("Enter an address: ")

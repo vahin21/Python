@@ -1,5 +1,7 @@
 # Program 8 - Fibonacci Series
 
+# Program to display the fibonacci series.
+
 # Variables
 n = int(input("Enter number of terms: "))
 f = 0

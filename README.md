@@ -1,10 +1,10 @@
 # Python
 
-Hello Everyone! Welcome to my GitHub repo 'Python'.
+Hello Everyone! Welcome to my GitHub repo 'Python'. It's my repo for all my small Python programs.
 
 ## Contents of this Repo
 
-In this repo, I will be storing all of the basic Python programs.
+These are the programs I have stored here...
 
 ### 1) Dictionary
 
@@ -14,7 +14,7 @@ The `data.json` is a file with all the words and definitions. The Python program
 
 ### 2) Rock Paper Scissor
 
-This was a school project by Vahin and I in class 11 PCMC for our computers project.
+This was a school project by my friend and I in class 11 PCMC for our computers project. He did the game logic while I did the front-end and configured the Flask server.
 
 ### 3) School Programs - 11th Grade
 
@@ -44,15 +44,11 @@ This program is a TicTacToe game created by my classmates and I. We are still de
 
 Yes, you can download this repo and use it for your own purposes.
 
-You have the right to download, modify, and share it to others. But, don't sell it to anyone.
+You have the right to download, modify, and share it to others.
 
 ## Issues & Bugs
 
 If you encounter any issues or bugs, you can visit the 'Issues' tab in my repository and create an issue. I will immediately look into it and resolve it as soon as possible.
-
-## Any Doubts or Questions
-
-If you have any doubts or questions, you are always free to ask me. I will be available on [Twitter](https://twitter.com/anikethchavare) and Discord (Aniketh#6387).
 
 ## Conclusion
 

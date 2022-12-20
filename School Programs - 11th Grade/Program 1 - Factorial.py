@@ -1,4 +1,6 @@
-# Program 1 - Factorial of a Number
+# Program 1 - Factorial
+
+# Program to calculate and print the factorial of a given number.
 
 # Variables
 num = int(input("Enter a number: "))

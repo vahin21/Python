@@ -1,5 +1,7 @@
 # Program 3 - Types of Numbers
 
+# Program to find no. of odd, even, positive, and negative numbers.
+
 # Variables
 num = int(input("Enter total numbers: "))
 

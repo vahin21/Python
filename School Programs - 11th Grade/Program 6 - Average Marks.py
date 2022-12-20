@@ -1,5 +1,7 @@
 # Program 6 - Average Marks
 
+# Program to calculate average marks of a user.
+
 # Variables
 math = int(input("Enter math marks: "))
 sci = int(input("Enter science marks: "))

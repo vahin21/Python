@@ -1,5 +1,7 @@
 # Program 5 - Upper Case
 
+# Program to print whether a given character is uppercase/lowercase/digit or any other character.
+
 # Variables
 ch = intput("Enter character: ")
 

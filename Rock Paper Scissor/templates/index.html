@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Rock Paper Scissor</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+            body {
+                background-color: antiquewhite;
+            }
+
+            #main-heading {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 35px;
+                margin-top: 55px;
+            }
+
+            #repo {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 19px;
+            }
+
+            #playAgain {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                display: none;
+                margin-top: 50px;
+            }
+
+            #form {
+                font-family: 'Monteserrat', sans-serif;
+                margin-top: 60px;
+            }
+
+            #submit {
+                padding: 7px;
+                height: 35px;
+                width: 80px;
+                background-color: transparent;
+                border-radius: 5px;
+                border-width: 1.9px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            #confetti-canvas {
+                position:absolute;
+                top:0;
+            }
+
+            .lottie {
+                width: 300px;
+                height: 300px;
+                display: none;
+                margin-top: -20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center><p id="main-heading">Rock Paper Scissor</p></center>
+
+        <center><p id="repo">Visit the GitHub repo <a href="https://github.com/Anikethc/Python/tree/main/Rock%20Paper%20Scissor" target="_blank">here</a>.</p></center>
+
+        <center>
+            <form id="form">
+                <label for="choice">Your Choice:</label>
+                <input type="text" id="choice" name="choice" onkeydown="return /[a-z]/i.test(event.key)"><br><br>
+            </form>
+
+            <button onclick="submitButton()" id="submit">Submit</button>
+        </center>
+	
+	    <center><p id="playAgain">Want to play again? <a href="/">Click Here</a></p></center>
+	
+	    <center>
+            <lottie-player src="https://assets8.lottiefiles.com/datafiles/3RKIaYNZqu6RrV0/data.json" id="win-lottie" class="lottie" mode="bounce" background="transparent" speed="1" loop autoplay></lottie-player>
+        </center>
+
+        <center>
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_w2eyfeib.json" id="draw-lottie" class="lottie" background="transparent" speed="1" loop autoplay></lottie-player>
+        </center>
+
+        <br><br>
+        <center>
+            <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_qynkjvnj.json" id="lose-lottie" class="lottie" background="transparent"  speed="1" loop autoplay></lottie-player>
+        </center>
+
+	    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>        
+        <script src="assets/confetti.js"></script>
+
+        <script>
+            var computer = "";
+            var user = "";
+            var result = "";
+
+            function capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+
+            function requestListener() {
+                const response = String(this.responseText);
+                const responseJson = JSON.parse(response);
+
+                computer = responseJson["computer"];
+                user = capitalizeFirstLetter(responseJson["user"]);
+                result = responseJson["result"];
+
+                document.getElementById("form").style.display = "none";
+                document.getElementById("submit").style.display = "none";
+                document.getElementById("playAgain").style.display = "block";
+
+                document.getElementById("main-heading").innerHTML = result + "!!";
+                document.getElementById("repo").innerHTML = "Computer: " + computer + "<br> You: " + user;
+
+                if (result == "You Win") {
+                    startConfetti();
+                    document.getElementById("win-lottie").style.display = "block";
+                }
+                
+                if (result == "Draw") {
+                    startConfetti();
+                    document.getElementById("draw-lottie").style.display = "block";
+                }
+
+                if (result == "You Lose") {
+                    document.getElementById("lose-lottie").style.display = "block";
+                }
+            }
+
+            function submitButton() {
+                const choiceText = document.getElementById("choice").value;
+                const items = ["paper", "rock", "scissor"];
+
+                if (choiceText == null || choiceText == "" || choiceText == " ") {
+                    alert("Please enter a value.")
+                } else {
+                    if (!items.includes(choiceText)) {
+                        alert("Please enter a valid input (paper, rock, scissor).")
+                    } else {
+                        var req = new XMLHttpRequest();
+                        req.addEventListener("load", requestListener);
+                        req.open("GET", "http://localhost:7878/play?choice=" + choiceText);
+                        req.send();
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

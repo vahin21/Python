@@ -10,6 +10,8 @@ computerChoice = ""
 
 # Play
 def play(choice):
+   choice = choice.lower()
+   
    computer = random.randrange(1,4)
 
    if computer == 1: # Computer's Choice - Paper

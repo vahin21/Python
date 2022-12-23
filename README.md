@@ -42,10 +42,6 @@ Two strings are an anagram if they both have the same number of letters and the 
 
 This program is a calculator. When you run the program, you get 7 options (add, subtract, multiply, divide, modulus, exponenciation, and floor division). You can choose which operation you want to do and enter the 2 numbers.
 
-### *8) TicTacToe*
-
-This program is a TicTacToe game created by my classmates and I. We are still developing it.
-
 ## Can You Use It?
 
 Yes, you can download this repo and use it for your own purposes.

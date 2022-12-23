@@ -18,7 +18,7 @@ You should have `tk` installed if you want to run this code. Install it with the
 
 This is a GUI-based calculator that I had developed for my school assignment.
 
-### *3) Rock Paper Scissor*
+### *3) Rock Paper Scissor - 11th Grade Project*
 
 This was a school project by my friend and I in class 11 PCMC for our computers project. He did the game logic while I did the front-end and configured the Flask server.
 
